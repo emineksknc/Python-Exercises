@@ -1,4 +1,4 @@
-# 7. Write a Python program that displays your name, age, and address on three different lines
+# 37. Write a Python program that displays your name, age, and address on three different lines
 
 print("/***     REGISTRY PAGE      ***/")
 name = input("Name : ")
