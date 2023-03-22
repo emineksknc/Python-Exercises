@@ -1,10 +1,8 @@
 # 90. Write a Python program to create a copy of its own source code.
 
-def file_copy(src, dest):
-    with open(src) as f, open(dest, 'w') as d:
-        d.write(f.read())
-        with open(src, 'r') as filehandle:
-            for line in filehandle:
-                print(line, end = '')
+with open("89.py", "r") as file:
+    data = file.read()
+    with open("temp.py", "w") as temp:
+        temp.write(data)
+        print(data)
 
-file_copy("1.py", "z.py")
